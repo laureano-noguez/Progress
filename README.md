@@ -1,5 +1,6 @@
-# Progress
-### _Projetos Progress Públicos_
+![N|Solid](https://software.com.br/images/product/3065/19155progress-openedge.large.png)
+
+# _Projetos Públicos em Progress_
 
 Nesse projeto importamos um aquivo de backtest do Meta Trader 5 no Progress para tratamento das operações com o objetivo de quantificar as transações com mais qualidade.
 
@@ -14,3 +15,6 @@ Dentro do projeto temos os seguintes arquivos:
 Me chama no linkedin se precisar de mais informações:
 
 https://www.linkedin.com/in/laureano-minetti-noguez-302ba3229/
+
+
+
