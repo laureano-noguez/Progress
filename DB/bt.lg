@@ -1,0 +1,20 @@
+
+                Wed Mar 16 10:13:47 2022
+[2022/03/16@10:13:47.945-0300] P-3584       T-1556  I DBUTIL   : (451)   Sessão prostrct create iniciada por Lmn em CON:. 
+[2022/03/16@10:13:47.953-0300] P-3584       T-1556  I DBUTIL   : (12862) Arquivo de estrutura  C:\mfin\DB\bt.st usado para criar banco de dados com tamanho de bloco  4096. 
+[2022/03/16@10:13:47.956-0300] P-3584       T-1556  I DBUTIL   : (334)   Fim de sessão prostrct create. 
+[2022/03/16@10:13:47.962-0300] P-3584       T-1556  I DBUTIL   : (451)   Sessão procopy iniciada por Lmn em CON:. 
+[2022/03/16@10:13:48.086-0300] P-3584       T-1556  I DBUTIL   : (334)   Fim de sessão procopy. 
+
+                Wed Mar 16 10:13:48 2022
+[2022/03/16@10:13:48.094-0300] P-3584       T-1556  I          : (451)   Sessão procopy get default SQL DBA iniciada por Lmn em CON:. 
+[2022/03/16@10:13:48.204-0300] P-3584       T-1556  I          : (334)   Fim de sessão procopy get default SQL DBA. 
+
+                Wed Mar 16 10:13:54 2022
+[2022/03/16@10:13:54.808-0300] P-3880       T-3476  I          : (451)   Sessão Single-user iniciada por Lmn em CON:. 
+[2022/03/16@10:13:54.808-0300] P-3880       T-3476  I          : (5175)  Erro de registro 5: Nao foi possivel criar a chave 'BT_PROGRESS' para o Event Viewer. 
+[2022/03/16@10:13:54.810-0300] P-3880       T-3476  I          : (5326)  Iniciando Fase de Physical Redo em 0 . 
+[2022/03/16@10:13:54.810-0300] P-3880       T-3476  I          : (7161)  Fase de Redo físico concluída em blk 0 off 888 upd 0. 
+[2022/03/16@10:13:54.810-0300] P-3880       T-3476  I          : (13547) At end of Physical redo, transaction table size is 1. 
+[2022/03/16@10:13:54.811-0300] P-3880       T-3476  I          : (12699) Banco de dados bt Opções:  
+[2022/03/16@10:16:41.603-0300] P-3880       T-3476  I          : (334)   Fim de sessão Single-user. 

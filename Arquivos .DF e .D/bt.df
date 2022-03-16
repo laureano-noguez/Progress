@@ -1,0 +1,193 @@
+ADD TABLE "arquivo"
+  AREA "Schema Area"
+  DUMP-NAME "arquivo"
+
+ADD FIELD "linha" OF "arquivo" AS character 
+  FORMAT "x(70)"
+  INITIAL ""
+  LABEL "linha"
+  POSITION 2
+  MAX-WIDTH 400
+  COLUMN-LABEL "linha"
+  ORDER 10
+
+ADD FIELD "DATEXP" OF "arquivo" AS date 
+  FORMAT "99/99/9999"
+  INITIAL ?
+  LABEL "DatExp"
+  POSITION 3
+  MAX-WIDTH 4
+  COLUMN-LABEL "DatExp"
+  ORDER 20
+
+ADD FIELD "hora" OF "arquivo" AS integer 
+  FORMAT "->>>>>>9"
+  INITIAL "0"
+  LABEL "Hora"
+  POSITION 4
+  MAX-WIDTH 4
+  COLUMN-LABEL "Hora"
+  ORDER 30
+
+ADD FIELD "contLinha" OF "arquivo" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  LABEL "contLinha"
+  POSITION 5
+  MAX-WIDTH 4
+  COLUMN-LABEL "contLinha"
+  ORDER 40
+
+ADD FIELD "codTeste" OF "arquivo" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  LABEL "codTeste"
+  POSITION 6
+  MAX-WIDTH 4
+  COLUMN-LABEL "codTeste"
+  ORDER 50
+
+ADD FIELD "numOperacao" OF "arquivo" AS integer 
+  DESCRIPTION "Número do Trade - Aparece após o #"
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  LABEL "numOperacao"
+  POSITION 7
+  MAX-WIDTH 4
+  COLUMN-LABEL "numOperacao"
+  ORDER 60
+
+ADD INDEX "contLinha" ON "arquivo" 
+  AREA "Schema Area"
+  PRIMARY
+  INDEX-FIELD "contLinha" ASCENDING 
+
+ADD INDEX "codTeste" ON "arquivo" 
+  AREA "Schema Area"
+  DESCRIPTION "codTeste"
+  INDEX-FIELD "codTeste" ASCENDING 
+
+ADD INDEX "numOperacao" ON "arquivo" 
+  AREA "Schema Area"
+  INDEX-FIELD "numOperacao" ASCENDING 
+  INDEX-FIELD "contLinha" ASCENDING 
+
+ADD TABLE "oper"
+  AREA "Schema Area"
+  DUMP-NAME "oper"
+
+ADD FIELD "codTeste" OF "oper" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  LABEL "codTeste"
+  POSITION 2
+  MAX-WIDTH 4
+  COLUMN-LABEL "codTeste"
+  ORDER 10
+
+ADD FIELD "dataImp" OF "oper" AS date 
+  FORMAT "99/99/9999"
+  INITIAL ?
+  LABEL "dataImp"
+  POSITION 3
+  MAX-WIDTH 4
+  COLUMN-LABEL "dataImp"
+  ORDER 20
+
+ADD FIELD "horaImp" OF "oper" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  LABEL "horaImp"
+  POSITION 4
+  MAX-WIDTH 4
+  COLUMN-LABEL "horaImp"
+  ORDER 30
+
+ADD FIELD "dataOper" OF "oper" AS date 
+  FORMAT "99/99/9999"
+  INITIAL ?
+  LABEL "dataOper"
+  POSITION 5
+  MAX-WIDTH 4
+  COLUMN-LABEL "dataOper"
+  ORDER 40
+
+ADD FIELD "horaOper" OF "oper" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  LABEL "horaOper"
+  POSITION 6
+  MAX-WIDTH 4
+  COLUMN-LABEL "horaOper"
+  ORDER 50
+
+ADD FIELD "numOper" OF "oper" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  LABEL "numOper"
+  POSITION 7
+  MAX-WIDTH 4
+  COLUMN-LABEL "numOper"
+  ORDER 60
+
+ADD FIELD "tipo" OF "oper" AS logical 
+  FORMAT "Compra/Venda"
+  INITIAL "Compra"
+  LABEL "tipo"
+  POSITION 8
+  MAX-WIDTH 1
+  COLUMN-LABEL "tipo"
+  ORDER 70
+
+ADD FIELD "lote" OF "oper" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  LABEL "lote"
+  POSITION 9
+  MAX-WIDTH 4
+  COLUMN-LABEL "lote"
+  ORDER 80
+
+ADD FIELD "pontos" OF "oper" AS decimal 
+  FORMAT "->>,>>9.99"
+  INITIAL "0"
+  LABEL "pontos"
+  POSITION 11
+  MAX-WIDTH 17
+  COLUMN-LABEL "pontos"
+  DECIMALS 2
+  ORDER 100
+
+ADD FIELD "resultado" OF "oper" AS decimal 
+  FORMAT "->>,>>9.99"
+  INITIAL "0"
+  LABEL "resultado"
+  POSITION 12
+  MAX-WIDTH 17
+  COLUMN-LABEL "resultado"
+  DECIMALS 2
+  ORDER 110
+
+ADD FIELD "tipoResultado" OF "oper" AS logical 
+  FORMAT "Gain/Loss"
+  INITIAL "Loss"
+  LABEL "tipoResultado"
+  POSITION 13
+  MAX-WIDTH 1
+  COLUMN-LABEL "tipoResultado"
+  ORDER 120
+
+ADD FIELD "linhaArq" OF "oper" AS character 
+  FORMAT "x(200)"
+  INITIAL ""
+  LABEL "linhaArq"
+  POSITION 14
+  MAX-WIDTH 400
+  COLUMN-LABEL "linhaArq"
+  ORDER 130
+
+.
+PSC
+cpstream=ISO8859-1
+.
+0000003664
